@@ -11,6 +11,7 @@ To build:
 - Clone this repo
 - Run `npm insttall`
 - Run `zap src/network.zap `
+- Run `rbxtsc build`
 - Run `rojo build example.project.json --output example.rbxl`
 
 Then, open `example.rbxl` and play. Enjoy.
