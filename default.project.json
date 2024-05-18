@@ -1,0 +1,75 @@
+{
+	"name": "roblox-ts-game",
+	"globIgnorePaths": ["**/package.json", "**/tsconfig.json"],
+	"tree": {
+		"Lighting": {
+			"$className": "Lighting",
+			"$path": "assets/lighting.rbxm"
+		},
+
+		"$className": "DataModel",
+		"ServerScriptService": {
+			"network": {
+				"$path": ".zap/server.lua"
+			},
+			"$className": "ServerScriptService",
+			"TS": {
+				"$path": "out/server"
+			}
+		},
+		"ReplicatedStorage": {
+			"Assets": {
+				"$path": "assets/assets.rbxm"
+			},
+			"network": {
+				"$path": ".zap/client.lua"
+			},
+			"$className": "ReplicatedStorage",
+			"rbxts_include": {
+				"$path": "include",
+				"node_modules": {
+					"$className": "Folder",
+					"@rbxts": {
+						"$path": "node_modules/@rbxts"
+					}
+				}
+			},
+			"TS": {
+				"$path": "out/shared"
+			}
+		},
+		"StarterPlayer": {
+			"$className": "StarterPlayer",
+			"StarterPlayerScripts": {
+				"$className": "StarterPlayerScripts",
+				"TS": {
+					"$path": "out/client"
+				}
+			}
+		},
+		"Workspace": {
+			"$className": "Workspace",
+			"$properties": {
+				"FilteringEnabled": true
+			},
+			"Terrain": {
+				"$path": "assets/terrain.rbxm"
+			},
+			"Level": {
+				"$path": "assets/level.rbxm"
+			}
+		},
+		"HttpService": {
+			"$className": "HttpService",
+			"$properties": {
+				"HttpEnabled": true
+			}
+		},
+		"SoundService": {
+			"$className": "SoundService",
+			"$properties": {
+				"RespectFilteringEnabled": true
+			}
+		}
+	}
+}
