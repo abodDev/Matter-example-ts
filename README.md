@@ -4,12 +4,12 @@ Matter's example game created in typescript.
 Requirements:
 - [node.js](https://nodejs.org/)
 - [zap](https://zap.redblox.dev/) 
-- [rojo](https://rojo.space/) 
+- [rojo](https://rojo.space/)
+- [roblox-ts](https://roblox-ts.com/)
 
 To build:
-
 - Clone this repo
-- Run `npm insttall`
+- Run `npm install`
 - Run `zap src/network.zap `
 - Run `rbxtsc build`
 - Run `rojo build example.project.json --output example.rbxl`
