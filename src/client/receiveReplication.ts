@@ -14,7 +14,6 @@ export function receiveReplication(world: World, state: ClientState): void {
 
 	replication.On((respone) => {
 		const entities = respone.changes as Map<string, Map<ComponentNames, { data?: UnionComponentsMap }>>;
-		print(respone);
 		assert(t.map(t.string, t.table)(entities));
 
 		for (const [serverEntityId, componentMap] of entities) {
